@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이용안내 - 김포우리병원</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 상단 탑 바 -->
+    <div class="bg-blue-900 text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span><i class="fa-solid fa-phone mr-1"></i> 대표전화: 031-999-1000</span>
+                <span><i class="fa-solid fa-location-dot mr-1"></i> 경기도 김포시 감암로 11</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-800 text-white font-black text-2xl px-3 py-1 rounded">GW</div>
+                <div>
+                    <h1 class="text-xl font-bold text-blue-900 tracking-tight"><a href="index.html">김포우리병원</a></h1>
+                    <p class="text-xs text-gray-500">Gimpo Woori Hospital</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+                <a href="about.html" class="hover:text-blue-600 transition">병원소개</a>
+                <a href="#" class="hover:text-blue-600 transition">진료과목/의료진</a>
+                <a href="#" class="hover:text-blue-600 transition">진료예약/조회</a>
+                <a href="guide.html" class="text-blue-600 font-bold transition">이용안내</a>
+                <a href="#" class="hover:text-blue-600 transition">건강검진센터</a>
+                <a href="#" class="hover:text-blue-600 transition">고객소통</a>
+            </nav>
+            <div>
+                <a href="index.html" class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-semibold px-4 py-2 rounded-lg transition">
+                    <i class="fa-solid fa-house mr-1"></i> 홈으로
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 서브 페이지 타이틀 배너 -->
+    <section class="bg-blue-900 text-white py-12 px-4 text-center">
+        <h2 class="text-3xl font-bold mb-2">이용안내</h2>
+        <p class="text-blue-200 text-sm">편리하고 쾌적한 병원 이용을 위한 종합 안내 정보입니다.</p>
+    </section>
+
+    <!-- 본문 내용 -->
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-12">
+        
+        <!-- 1. 진료절차 안내 -->
+        <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100">
+            <h3 class="text-xl font-bold text-blue-900 mb-6 flex items-center">
+                <i class="fa-solid fa-file-lines mr-3 text-blue-600"></i> 외래 진료절차 안내
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-2 font-bold">1</div>
+                    <h4 class="font-bold text-gray-800 mb-1">접수 및 수납</h4>
+                    <p class="text-xs text-gray-500">1층 원무과 접수창구 (신분증 지참)</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-2 font-bold">2</div>
+                    <h4 class="font-bold text-gray-800 mb-1">해당 진료과 이동</h4>
+                    <p class="text-xs text-gray-500">외래 진료실 앞 대기 후 호출</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-2 font-bold">3</div>
+                    <h4 class="font-bold text-gray-800 mb-1">전문의 진료</h4>
+                    <p class="text-xs text-gray-500">증상 상담 및 검사/처방 결정</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-2 font-bold">4</div>
+                    <h4 class="font-bold text-gray-800 mb-1">수납 및 처방전</h4>
+                    <p class="text-xs text-gray-500">수납 후 외부 약국 제출</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. 진료시간 안내 -->
+        <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100">
+            <h3 class="text-xl font-bold text-blue-900 mb-6 flex items-center">
+                <i class="fa-solid fa-clock mr-3 text-blue-600"></i> 진료시간 안내
+            </h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse text-sm">
+                    <thead>
+                        <tr class="bg-gray-100 text-gray-700">
+                            <th class="p-3 border-b">구분</th>
+                            <th class="p-3 border-b">요일</th>
+                            <th class="p-3 border-b">진료 시간</th>
+                            <th class="p-3 border-b">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600">
+                        <tr>
+                            <td class="p-3 border-b font-semibold">평일 진료</td>
+                            <td class="p-3 border-b">월요일 ~ 금요일</td>
+                            <td class="p-3 border-b">08:30 ~ 17:30</td>
+                            <td class="p-3 border-b">점심시간 12:30 ~ 13:30</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 border-b font-semibold">토요일 진료</td>
+                            <td class="p-3 border-b">토요일</td>
+                            <td class="p-3 border-b">08:30 ~ 12:30</td>
+                            <td class="p-3 border-b">점심시간 없음 (오전 진료만 진행)</td>
+                        </tr>
+                        <tr class="text-blue-900 font-bold bg-blue-50/50">
+                            <td class="p-3 border-b">응급실</td>
+                            <td class="p-3 border-b">365일 연중무휴</td>
+                            <td class="p-3 border-b">24시간 운영</td>
+                            <td class="p-3 border-b">응급환자 전용</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 3. 오시는 길 및 주차 안내 -->
+        <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100">
+            <h3 class="text-xl font-bold text-blue-900 mb-6 flex items-center">
+                <i class="fa-solid fa-map-location-dot mr-3 text-blue-600"></i> 오시는 길 및 주차 안내
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-gray-600">
+                <div class="space-y-3">
+                    <h4 class="font-bold text-gray-800 text-base mb-2"><i class="fa-solid fa-location-arrow text-blue-600 mr-2"></i> 위치 정보</h4>
+                    <p><strong>주소:</strong> 경기도 김포시 감암로 11 (걸포동)</p>
+                    <p><strong>대표전화:</strong> 031-999-1000</p>
+                    <p><strong>대중교통:</strong> 걸포북변역 인근 버스 승하차 후 도보 이용</p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-gray-800 text-base mb-2"><i class="fa-solid fa-car text-blue-600 mr-2"></i> 주차장 이용 안내</h4>
+                    <p><strong>원내 주차장:</strong> 본관 및 종합검진센터 지하 주차장 이용 가능</p>
+                    <p><strong>주차 요금:</strong> 외래 진료 및 검진 환자 할인 적용 (원무과 승인)</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-gray-400 text-xs py-10 px-4 mt-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-white font-bold text-sm mb-2">김포우리병원</p>
+            <p>경기도 김포시 감암로 11 (걸포동) | 대표전화: 031-999-1000</p>
+            <p class="mt-4 text-gray-500">&copy; Gimpo Woori Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
